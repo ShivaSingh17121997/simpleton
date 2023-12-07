@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-item {
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item-in {
+            margin: 15px;
+            font-weight: 800;
+            font-size: large;
+        }
+
+        .first-div {
+            background-image: url('./images/img1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            height: 600px;
+
+
+        }
+
+        .pinkdiv {
+            width: 400px;
+            margin-left: 5%;
+            background-color: rgba(255, 97, 142, 0.6);
+            color: white;
+            padding: 20px;
+            position: absolute;
+            margin: 15% auto 0 5%
+        }
+
+        .heading {
+            text-align: center;
+            color: white;
+            padding: 20px;
+
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .cards>div>img {
+            width: 83%;
+            height: 55%;
+            padding: 7%;
+            border-radius: 0px 40px 0px 0px;
+        }
+
+
+        .sec-main-div {
+            background: linear-gradient(to right, #fa5fe8, #f8d451);
+
+        }
+
+        .button {
+            margin-left: 40%;
+            padding: 90px;
+            width: 40px;
+            height: 35px;
+
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: rgba(255, 239, 239, 0.4);
+            color: black;
+            font-weight: 700;
+            border: none;
+
+        }
+
+        .card-design {
+            text-align: center;
+            width: 300px;
+            height: 450px;
+            border-radius: 0px 40px 0px 40px;
+            background-color: white;
+        }
+
+        .vacant {
+            width: auto;
+            height: 70px;
+            background: linear-gradient(to right, #fa5fe8, #f8d451);
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .first-div {
+                height: 300px;
+            }
+
+            .pinkdiv {
+                width: 70%;
+                /* Decreased width */
+                margin-top: 15%;
+                /* Decreased margin-top */
+            }
+
+            .card-design {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .first-div {
+                height: 200px;
+            }
+
+            .pinkdiv {
+                width: 60%;
+                font-size: small;
+                /* Decreased width */
+                margin-top: 10%;
+                /* Decreased margin-top */
+            }
+
+            .button {
+                margin-left: 20%;
+                padding: 90px;
+                width: 40px;
+                height: 35px;
+
+            }
+
+            button {
+                width: 100px;
+                height: 30px;
+                border-radius: 20px;
+                background-color: rgba(255, 239, 239, 0.4);
+                color: black;
+                font-weight: 700;
+                border: none;
+            }
+
+            .card-design {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-item">
+                <div class="nav-item-in">Home</div>
+                <div class="nav-item-in">Order</div>
+                <div class="nav-item-in">Food</div>
+                <div class="nav-item-in">Restaurant</div>
+                <div class="nav-item-in">Testimonials</div>
+                <div class="nav-item-in">Contact Us</div>
+            </div>
+
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <div class="first-div">
+            <div class="pinkdiv">
+                <h1>LOREM IPSUM</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quibusdam molestiae ad repudiandae
+                    omnis amet, eos maiores nisi nobis, obcaecati, ipsum consequuntur sunt praesentium. Earum quae nobis
+                    distinctio voluptatum voluptate! </P>
+            </div>
+        </div>
+
+        <div class="vacant">
+
+        </div>
+
+        <div class="sec-main-div">
+            <div>
+                <h1 class="heading">Ordere Now</h1>
+            </div>
+            <div class="cards">
+                <div class="card-design">
+                    <img src="./images/img4.jpg" alt="">
+                    <h4>BURGER</h4>
+                    <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum aut excepturi </P>
+                </div>
+                <div class="card-design">
+                    <img src="./images/img2.jpg" alt="">
+                    <h4>PIZZA</h4>
+                    <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum aut excepturi </P>
+                </div>
+                <div class="card-design">
+                    <img src="./images/img3.jpg " alt="">
+                    <h4>PASTA</h4>
+                    <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum aut excepturi</P>
+                </div>
+            </div>
+
+            <div>
+                <div class="button">
+                    <button>Order</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
